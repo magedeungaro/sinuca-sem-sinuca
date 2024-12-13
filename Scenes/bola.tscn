@@ -6,6 +6,7 @@
 radius = 1.2482
 
 [node name="Bola" type="RigidBody2D"]
+collision_layer = 3
 
 [node name="CueBall" type="Sprite2D" parent="."]
 position = Vector2(10.5216, 9.97834)

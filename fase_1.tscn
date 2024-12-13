@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://uveoktxolvoa"]
+[gd_scene load_steps=5 format=3 uid="uid://uveoktxolvoa"]
 
+[ext_resource type="PackedScene" uid="uid://bkp0gycfnwwyw" path="res://Scenes/taco.tscn" id="1_56lkl"]
 [ext_resource type="PackedScene" uid="uid://cbbjivddbmugd" path="res://Scenes/pista.tscn" id="2_2gxnf"]
 [ext_resource type="PackedScene" uid="uid://bbxrursx6deim" path="res://Scenes/bola.tscn" id="2_xv1x7"]
 
@@ -9,10 +10,15 @@ bounce = 0.5
 
 [node name="Fase1" type="Node2D"]
 
+[node name="Taco" parent="." instance=ExtResource("1_56lkl")]
+z_index = 1
+position = Vector2(122, 683)
+scale = Vector2(7.36161, 7.36161)
+
 [node name="pista" parent="." instance=ExtResource("2_2gxnf")]
 
 [node name="Bola" parent="pista" instance=ExtResource("2_xv1x7")]
-position = Vector2(1539, 117)
+position = Vector2(521, 679)
 physics_material_override = SubResource("PhysicsMaterial_jorfv")
 gravity_scale = 0.0
 linear_damp = 2.0
