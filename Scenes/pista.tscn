@@ -2,19 +2,17 @@
 
 [ext_resource type="Texture2D" uid="uid://dprsqehmjimmr" path="res://images/pista.jpg" id="1_8gasy"]
 
-[node name="pista" type="TextureRect"]
-texture_filter = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_right = 1144.0
-offset_bottom = 648.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="pista" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1000.0
+offset_bottom = 1000.0
+scale = Vector2(1.14353, 0.643813)
 texture = ExtResource("1_8gasy")
 expand_mode = 1
 
 [node name="Area2D" type="Area2D" parent="."]
+scale = Vector2(1.00025, 0.996073)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
 position = Vector2(18, 648)

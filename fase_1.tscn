@@ -1,16 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://uveoktxolvoa"]
 
-[ext_resource type="Texture2D" uid="uid://c283ueo0h6hbn" path="res://images/whitebckg.jpg" id="1_sa6h7"]
-[ext_resource type="PackedScene" uid="uid://cbbjivddbmugd" path="res://pista.tscn" id="2_5pd6s"]
+[ext_resource type="PackedScene" uid="uid://cbbjivddbmugd" path="res://Scenes/pista.tscn" id="2_2gxnf"]
+[ext_resource type="PackedScene" uid="uid://bbxrursx6deim" path="res://Scenes/bola.tscn" id="2_xv1x7"]
 
 [node name="Fase1" type="Node2D"]
 
-[node name="background" type="TextureRect" parent="."]
-offset_left = 1.0
-offset_top = -3.0
-offset_right = 1143.0
-offset_bottom = 645.0
-texture = ExtResource("1_sa6h7")
-flip_h = true
+[node name="pista" parent="." instance=ExtResource("2_2gxnf")]
 
-[node name="pista" parent="." instance=ExtResource("2_5pd6s")]
+[node name="Bola" parent="pista" instance=ExtResource("2_xv1x7")]
+position = Vector2(100, 507)
