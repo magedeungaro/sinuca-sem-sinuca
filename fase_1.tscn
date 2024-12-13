@@ -8,4 +8,4 @@
 [node name="pista" parent="." instance=ExtResource("2_2gxnf")]
 
 [node name="Bola" parent="pista" instance=ExtResource("2_xv1x7")]
-position = Vector2(64, 334)
+position = Vector2(1539, 117)
