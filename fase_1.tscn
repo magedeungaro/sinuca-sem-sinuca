@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://uveoktxolvoa"]
+
+[ext_resource type="Texture2D" uid="uid://c283ueo0h6hbn" path="res://images/whitebckg.jpg" id="1_sa6h7"]
+[ext_resource type="Texture2D" uid="uid://dprsqehmjimmr" path="res://images/pista.jpg" id="2_xecf4"]
+
+[node name="Fase1" type="Node2D"]
+
+[node name="background" type="TextureRect" parent="."]
+offset_left = 1.0
+offset_top = -3.0
+offset_right = 1143.0
+offset_bottom = 645.0
+texture = ExtResource("1_sa6h7")
+flip_h = true
+
+[node name="pista" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1144.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_xecf4")
+expand_mode = 1
