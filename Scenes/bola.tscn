@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbxrursx6deim"]
+
+[ext_resource type="Texture2D" uid="uid://ckfub623yt6mw" path="res://images/Cue Ball.png" id="1_7dnqb"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jvidg"]
+radius = 2.94476
+
+[node name="Bola" type="CharacterBody2D"]
+
+[node name="CueBall" type="Sprite2D" parent="."]
+position = Vector2(2.52165, 1.97834)
+scale = Vector2(0.0112314, 0.0112314)
+texture = ExtResource("1_7dnqb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2.50976, 2.07201)
+scale = Vector2(0.425612, 0.425612)
+shape = SubResource("CircleShape2D_jvidg")

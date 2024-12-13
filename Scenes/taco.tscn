@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bkp0gycfnwwyw"]
+
+[ext_resource type="Texture2D" uid="uid://bjjl1qh31mpe1" path="res://images/Taco.png" id="1_3lxp6"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kmnvl"]
+radius = 1.17253
+height = 65.1153
+
+[node name="Taco" type="CharacterBody2D"]
+
+[node name="Taco" type="Sprite2D" parent="."]
+position = Vector2(28, 29)
+scale = Vector2(0.0316406, 0.0316406)
+texture = ExtResource("1_3lxp6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(29, 29)
+rotation = 0.741502
+shape = SubResource("CapsuleShape2D_kmnvl")
